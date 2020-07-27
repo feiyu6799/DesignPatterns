@@ -1,5 +1,9 @@
 package com.feiyu.flyweight;
-
+/**
+ * String中的享元模式
+ * @author feiyu
+ *
+ */
 public class TestString {
     public static void main(String[] args) {
         String s1 = "abc";
@@ -10,7 +14,7 @@ public class TestString {
         System.out.println(s1 == s2); //true
         System.out.println(s1 == s3); //false
         System.out.println(s3 == s4);
-        System.out.println(s3.intern() == s1);
+        System.out.println(s3.intern() == s1);//string.intern()也是从常量池中取的
         System.out.println(s3.intern() == s4.intern());
     }
 }
